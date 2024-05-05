@@ -1,38 +1,105 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-title {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 130px;
+  background-color:rgba(255, 0, 0, 0.073);
+  color:white;
+  border:#c42e14;
+  outline: #303f9f;
+  height:50px;
+  transition:height 1s;
+  -webkit-transition:height 1s;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#sw{
+  margin-top: -1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.pending-todos,
+.completed-todos {
+  margin: 20px;
+}
+
+.pending-todos h2,
+.completed-todos h2 {
+  color: #3f51b5;
+}
+
+.pending-todos ul,
+.completed-todos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pending-todos li,
+.completed-todos li {
+  margin-bottom: 10px;
+}
+
+.add-todo {
+  margin-top: 20px;
+}
+
+.new-todo-input,
+.new-todo-date,
+.add-todo-button {
+  margin-right: 10px;
+  border-radius: 12px;
+  height: 50px;
+  margin-top: 40px;
+  background-color:rgba(255, 0, 0, 0.073);
+  color:rgb(255, 255, 255);
+  border:#c42e14;
+  outline: #303f9f;
+  height:50px;
+  transition:height 1s;
+  -webkit-transition:height 1s;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  
+}
+
+.export-button {
+  margin-top: 40px;
+  background-color: #1f9165;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.export-button:hover {
+  background-color: #303f9f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4{
+  margin-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+#sd{
+  margin-left: 8px;
+}
+#s3
+{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+#ss{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
 }
